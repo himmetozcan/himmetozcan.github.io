@@ -272,6 +272,17 @@ h3 {
   font-size: 0.96rem;
 }
 
+.product-row-copy {
+  display: grid;
+  gap: 8px;
+}
+
+.product-row .product-role {
+  color: var(--ink);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
 .has-product-visual {
   grid-template-columns: 170px minmax(0, 1fr) 190px;
   align-items: center;
