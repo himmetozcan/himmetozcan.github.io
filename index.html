@@ -99,14 +99,20 @@
         </div>
 
         <div class="project-list">
-          <article class="project" id="silentproof">
-            <figure class="project-visual security">
-              <div class="visual-grid">
-                <span>authorized scope</span>
-                <span>agentic review</span>
-                <span>human verified</span>
-                <span>defensive report</span>
-              </div>
+          <article class="project featured-project" id="silentproof">
+            <figure class="project-visual image-cover">
+              <button
+                class="visual-button"
+                type="button"
+                data-modal-image="assets/project-visuals/silentproof.png"
+                data-modal-title="SilentProof authorization-first multi-agent security review workflow"
+                aria-label="Open SilentProof project visual"
+              >
+                <img
+                  src="assets/project-visuals/silentproof.png"
+                  alt="SilentProof authorization-first multi-agent security review workflow"
+                />
+              </button>
             </figure>
             <div class="project-copy">
               <div class="project-title-row">
@@ -290,5 +296,38 @@
       </p>
       <p class="note">Client-confidential work is summarized with sanitized descriptions and generated concept visuals.</p>
     </footer>
+
+    <dialog class="image-dialog" id="image-dialog" aria-labelledby="image-dialog-title">
+      <div class="dialog-card">
+        <div class="dialog-bar">
+          <h2 id="image-dialog-title">Project visual</h2>
+          <button class="dialog-close" type="button" aria-label="Close enlarged project visual">Close</button>
+        </div>
+        <img id="image-dialog-img" alt="" />
+      </div>
+    </dialog>
+
+    <script>
+      const imageDialog = document.getElementById("image-dialog");
+      const imageDialogImg = document.getElementById("image-dialog-img");
+      const imageDialogTitle = document.getElementById("image-dialog-title");
+      const closeDialogButton = imageDialog.querySelector(".dialog-close");
+
+      document.querySelectorAll("[data-modal-image]").forEach((trigger) => {
+        trigger.addEventListener("click", () => {
+          imageDialogImg.src = trigger.dataset.modalImage;
+          imageDialogImg.alt = trigger.dataset.modalTitle || "Project visual";
+          imageDialogTitle.textContent = trigger.dataset.modalTitle || "Project visual";
+          imageDialog.showModal();
+        });
+      });
+
+      closeDialogButton.addEventListener("click", () => imageDialog.close());
+      imageDialog.addEventListener("click", (event) => {
+        if (event.target === imageDialog) {
+          imageDialog.close();
+        }
+      });
+    </script>
   </body>
 </html>
