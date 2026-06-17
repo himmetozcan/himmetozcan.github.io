@@ -238,6 +238,68 @@ h3 {
   gap: 18px;
 }
 
+.other-products {
+  margin-top: 36px;
+  border-top: 1px solid var(--line);
+  padding-top: 26px;
+}
+
+.other-products .eyebrow {
+  margin-bottom: 12px;
+}
+
+.product-row {
+  display: grid;
+  grid-template-columns: 170px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+  border-bottom: 1px solid var(--line);
+  padding: 14px 0;
+}
+
+.product-row:last-child {
+  border-bottom: 0;
+}
+
+.product-row a {
+  color: var(--ink);
+  font-weight: 850;
+}
+
+.product-row p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.has-product-visual {
+  grid-template-columns: 170px minmax(0, 1fr) 190px;
+  align-items: center;
+}
+
+.product-thumb {
+  width: 190px;
+  aspect-ratio: 3 / 2;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  padding: 0;
+  background: var(--surface);
+  cursor: zoom-in;
+  overflow: hidden;
+}
+
+.product-thumb:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 3px;
+}
+
+.product-thumb img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: contain;
+}
+
 .project {
   display: grid;
   grid-template-columns: minmax(360px, 0.96fr) minmax(0, 1.04fr);
@@ -551,6 +613,16 @@ dd {
 
   .project-title-row {
     flex-direction: column;
+  }
+
+  .product-row {
+    grid-template-columns: 1fr;
+    gap: 6px;
+  }
+
+  .product-thumb {
+    width: 100%;
+    max-width: 320px;
   }
 
   dl div {
