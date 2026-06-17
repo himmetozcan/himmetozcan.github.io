@@ -30,11 +30,10 @@
           <p class="hero-text">
             I lead and build AI products across on-prem model serving, RAG, multimodal document
             intelligence, computer vision, AI-assisted security review and revenue-generating SaaS.
-            Current work includes technical leadership of a 7-person AI engineering team.
+            Current work combines hands-on architecture, implementation and technical leadership.
           </p>
           <div class="hero-actions" aria-label="Profile links">
             <a href="https://www.linkedin.com/in/abdullahozcan/" rel="noreferrer">LinkedIn</a>
-            <a href="https://github.com/himmetozcan" rel="noreferrer">GitHub</a>
             <a href="https://scholar.google.com/citations?user=itxNGFgAAAAJ&hl=en" rel="noreferrer">Google Scholar</a>
             <a href="mailto:himmetozcan@gmail.com">Email</a>
           </div>
@@ -95,11 +94,188 @@
       <section class="section" id="projects">
         <div class="section-heading">
           <p class="eyebrow">Selected projects</p>
-          <h2>Recent AI systems and products</h2>
+          <h2>Recent Projects</h2>
         </div>
 
         <div class="project-list">
-          <article class="project featured-project" id="silentproof">
+          <article class="project" id="pamukkale-onprem-ai">
+            <figure class="project-visual image-cover">
+              <button
+                class="visual-button"
+                type="button"
+                data-modal-image="assets/project-visuals/pamukkale-onprem-ai.png"
+                data-modal-title="Pamukkale University on-prem campus AI platform"
+                aria-label="Open Pamukkale University project visual"
+              >
+                <img
+                  src="assets/project-visuals/pamukkale-onprem-ai.png"
+                  alt="Pamukkale University on-prem campus AI platform"
+                />
+              </button>
+            </figure>
+            <div class="project-copy">
+              <div class="project-title-row">
+                <h3>Pamukkale University on-prem campus AI platform</h3>
+                <span class="tag">On-prem AI</span>
+              </div>
+              <p>
+                Designed a private ChatGPT-like platform for university users with local/open-source
+                model serving, Open WebUI access, RAG workspaces, quotas, API access and optional
+                external model connectivity.
+              </p>
+              <dl>
+                <div><dt>Role</dt><dd>Lead AI Engineer</dd></div>
+                <div><dt>Stack</dt><dd>GPUStack, vLLM, LiteLLM, Open WebUI, Qdrant, JWT/API access</dd></div>
+              </dl>
+              <div class="project-links">
+                <span>Sanitized architecture PDF coming soon</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" id="utility-big-data">
+            <figure class="project-visual image-cover">
+              <button
+                class="visual-button"
+                type="button"
+                data-modal-image="assets/project-visuals/utility-big-data.png"
+                data-modal-title="Utility Big Data enterprise data-discovery agent"
+                aria-label="Open Utility Big Data project visual"
+              >
+                <img
+                  src="assets/project-visuals/utility-big-data.png"
+                  alt="Utility Big Data enterprise data-discovery agent"
+                />
+              </button>
+            </figure>
+            <div class="project-copy">
+              <div class="project-title-row">
+                <h3>Utility Big Data enterprise data-discovery agent</h3>
+                <span class="tag">Enterprise RAG</span>
+              </div>
+              <p>
+                Created an agentic data-discovery system over enterprise datasets with semantic
+                table/column/business-term retrieval, guarded read-only SQL execution, path resolution,
+                validation tools, chart generation and regression evaluation.
+              </p>
+              <dl>
+                <div><dt>Role</dt><dd>Technical lead</dd></div>
+                <div><dt>Stack</dt><dd>OpenAI Agents SDK, Qdrant, Dremio/Iceberg, FastAPI, SQL guardrails</dd></div>
+              </dl>
+              <div class="project-links">
+                <span>Sanitized case study PDF coming soon</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" id="electrical-installation-ai">
+            <figure class="project-visual image-cover">
+              <button
+                class="visual-button"
+                type="button"
+                data-modal-image="assets/project-visuals/electrical-installation-ai.png"
+                data-modal-title="Electrical installation project control AI"
+                aria-label="Open Electrical installation project visual"
+              >
+                <img
+                  src="assets/project-visuals/electrical-installation-ai.png"
+                  alt="Electrical installation project control AI"
+                />
+              </button>
+            </figure>
+            <div class="project-copy">
+              <div class="project-title-row">
+                <h3>Electrical installation project control AI</h3>
+                <span class="tag">Multimodal AI</span>
+              </div>
+              <p>
+                Built a multimodal document-control workflow for engineering PDFs and regulations,
+                combining object detection, OCR, VLM reasoning, Qdrant evidence retrieval and
+                checklist-style yes/no decisions with traceable explanations.
+              </p>
+              <dl>
+                <div><dt>Role</dt><dd>AI system designer / implementation lead</dd></div>
+                <div><dt>Stack</dt><dd>YOLO-26, LightOnOCR-2-1B, Qwen2.5-VL, Qdrant, OpenAI-compatible agents</dd></div>
+              </dl>
+              <div class="project-links">
+                <span>Sanitized case study PDF coming soon</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" id="drone-inspection-ai">
+            <figure class="project-visual image-cover">
+              <button
+                class="visual-button"
+                type="button"
+                data-modal-image="assets/project-visuals/drone-inspection-ai.png"
+                data-modal-title="Utility drone inspection PoC"
+                aria-label="Open Utility drone inspection project visual"
+              >
+                <img
+                  src="assets/project-visuals/drone-inspection-ai.png"
+                  alt="Utility drone inspection PoC"
+                />
+              </button>
+            </figure>
+            <div class="project-copy">
+              <div class="project-title-row">
+                <h3>Utility drone inspection PoC</h3>
+                <span class="tag">Vision agents</span>
+              </div>
+              <p>
+                Converted heterogeneous W/Z/T drone imagery into pole-centered clusters and combined
+                YOLO, SAM, background removal, thermal parsing and agentic LLM reasoning to produce
+                structured JSON inspection outputs with visual evidence.
+              </p>
+              <dl>
+                <div><dt>Role</dt><dd>AI architecture and PoC delivery</dd></div>
+                <div><dt>Stack</dt><dd>YOLO, SAM, RGB/thermal analysis, clustering, agentic post-processing</dd></div>
+              </dl>
+              <div class="project-links">
+                <span>Sanitized case study PDF coming soon</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" id="vtry-ai">
+            <figure class="project-visual image-cover">
+              <button
+                class="visual-button"
+                type="button"
+                data-modal-image="assets/project-visuals/vtry-ai.png"
+                data-modal-title="vtry.ai revenue-generating AI SaaS product architecture"
+                aria-label="Open vtry.ai project visual"
+              >
+                <img
+                  src="assets/project-visuals/vtry-ai.png"
+                  alt="vtry.ai revenue-generating AI SaaS product architecture"
+                />
+              </button>
+            </figure>
+            <div class="project-copy">
+              <div class="project-title-row">
+                <h3>vtry.ai</h3>
+                <span class="tag">Revenue SaaS</span>
+              </div>
+              <p>
+                Designed and built a revenue-generating AI SaaS product end to end: authentication,
+                subscriptions and credits, image generation/editing, person and clothes libraries,
+                admin analytics, webhooks and public APIs.
+              </p>
+              <dl>
+                <div><dt>Role</dt><dd>Solo builder</dd></div>
+                <div><dt>Stack</dt><dd>Next.js, TypeScript, Stripe, Cloudflare R2/D1, fal.ai, Nano Banana, FLUX</dd></div>
+              </dl>
+              <div class="project-links">
+                <a href="https://vtry.ai/" rel="noreferrer">Live product</a>
+                <span>Demo video coming soon</span>
+                <span>Case study coming soon</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="project" id="silentproof">
             <figure class="project-visual image-cover">
               <button
                 class="visual-button"
@@ -136,153 +312,6 @@
               </div>
             </div>
           </article>
-
-          <article class="project" id="vtry-ai">
-            <figure class="project-visual product">
-              <div class="visual-grid">
-                <span>try-on</span>
-                <span>image edit</span>
-                <span>credits</span>
-                <span>public API</span>
-              </div>
-            </figure>
-            <div class="project-copy">
-              <div class="project-title-row">
-                <h3>vtry.ai</h3>
-                <span class="tag">Revenue SaaS</span>
-              </div>
-              <p>
-                Designed and built a revenue-generating AI SaaS product end to end: authentication,
-                subscriptions and credits, image generation/editing, person and clothes libraries,
-                admin analytics, webhooks and public APIs.
-              </p>
-              <dl>
-                <div><dt>Role</dt><dd>Solo builder</dd></div>
-                <div><dt>Stack</dt><dd>Next.js, TypeScript, Stripe, Cloudflare R2/D1, fal.ai, Nano Banana, FLUX</dd></div>
-              </dl>
-              <div class="project-links">
-                <a href="https://vtry.ai/" rel="noreferrer">Live product</a>
-                <span>Demo video coming soon</span>
-                <span>Case study coming soon</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project" id="pamukkale-onprem-ai">
-            <figure class="project-visual infrastructure">
-              <div class="visual-grid">
-                <span>GPUStack</span>
-                <span>vLLM</span>
-                <span>LiteLLM</span>
-                <span>Qdrant RAG</span>
-              </div>
-            </figure>
-            <div class="project-copy">
-              <div class="project-title-row">
-                <h3>Pamukkale University on-prem campus AI platform</h3>
-                <span class="tag">On-prem AI</span>
-              </div>
-              <p>
-                Designed a private ChatGPT-like platform for university users with local/open-source
-                model serving, Open WebUI access, RAG workspaces, quotas, API access and optional
-                external model connectivity.
-              </p>
-              <dl>
-                <div><dt>Role</dt><dd>Lead AI Engineer</dd></div>
-                <div><dt>Stack</dt><dd>GPUStack, vLLM, LiteLLM, Open WebUI, Qdrant, JWT/API access</dd></div>
-              </dl>
-              <div class="project-links">
-                <span>Sanitized architecture PDF coming soon</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project" id="utility-big-data">
-            <figure class="project-visual data">
-              <div class="visual-grid">
-                <span>semantic catalog</span>
-                <span>Qdrant retrieval</span>
-                <span>SQL guardrails</span>
-                <span>SSE UI</span>
-              </div>
-            </figure>
-            <div class="project-copy">
-              <div class="project-title-row">
-                <h3>Utility Big Data enterprise data-discovery agent</h3>
-                <span class="tag">Enterprise RAG</span>
-              </div>
-              <p>
-                Created an agentic data-discovery system over enterprise datasets with semantic
-                table/column/business-term retrieval, guarded read-only SQL execution, path resolution,
-                validation tools, chart generation and regression evaluation.
-              </p>
-              <dl>
-                <div><dt>Role</dt><dd>Technical lead</dd></div>
-                <div><dt>Stack</dt><dd>OpenAI Agents SDK, Qdrant, Dremio/Iceberg, FastAPI, SQL guardrails</dd></div>
-              </dl>
-              <div class="project-links">
-                <span>Sanitized case study PDF coming soon</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project" id="electrical-installation-ai">
-            <figure class="project-visual document">
-              <div class="visual-grid">
-                <span>large PDFs</span>
-                <span>YOLO-26</span>
-                <span>LightOnOCR</span>
-                <span>evidence QA</span>
-              </div>
-            </figure>
-            <div class="project-copy">
-              <div class="project-title-row">
-                <h3>Electrical installation project control AI</h3>
-                <span class="tag">Multimodal AI</span>
-              </div>
-              <p>
-                Built a multimodal document-control workflow for engineering PDFs and regulations,
-                combining object detection, OCR, VLM reasoning, Qdrant evidence retrieval and
-                checklist-style yes/no decisions with traceable explanations.
-              </p>
-              <dl>
-                <div><dt>Role</dt><dd>AI system designer / implementation lead</dd></div>
-                <div><dt>Stack</dt><dd>YOLO-26, LightOnOCR-2-1B, Qwen2.5-VL, Qdrant, OpenAI-compatible agents</dd></div>
-              </dl>
-              <div class="project-links">
-                <span>Sanitized case study PDF coming soon</span>
-              </div>
-            </div>
-          </article>
-
-          <article class="project" id="drone-inspection-ai">
-            <figure class="project-visual drone">
-              <div class="visual-grid">
-                <span>RGB frames</span>
-                <span>thermal frames</span>
-                <span>pole clusters</span>
-                <span>visual evidence</span>
-              </div>
-            </figure>
-            <div class="project-copy">
-              <div class="project-title-row">
-                <h3>Utility drone inspection PoC</h3>
-                <span class="tag">Vision agents</span>
-              </div>
-              <p>
-                Converted heterogeneous W/Z/T drone imagery into pole-centered clusters and combined
-                YOLO, SAM, background removal, thermal parsing and agentic LLM reasoning to produce
-                structured JSON inspection outputs with visual evidence.
-              </p>
-              <dl>
-                <div><dt>Role</dt><dd>AI architecture and PoC delivery</dd></div>
-                <div><dt>Stack</dt><dd>YOLO, SAM, RGB/thermal analysis, clustering, agentic post-processing</dd></div>
-              </dl>
-              <div class="project-links">
-                <span>Sanitized case study PDF coming soon</span>
-              </div>
-            </div>
-          </article>
         </div>
       </section>
     </main>
@@ -291,8 +320,7 @@
       <p>
         Berlin, Germany ·
         <a href="mailto:himmetozcan@gmail.com">himmetozcan@gmail.com</a> ·
-        <a href="https://www.linkedin.com/in/abdullahozcan/" rel="noreferrer">LinkedIn</a> ·
-        <a href="https://github.com/himmetozcan" rel="noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/abdullahozcan/" rel="noreferrer">LinkedIn</a>
       </p>
       <p class="note">Client-confidential work is summarized with sanitized descriptions and generated concept visuals.</p>
     </footer>

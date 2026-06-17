@@ -240,26 +240,13 @@ h3 {
 
 .project {
   display: grid;
-  grid-template-columns: minmax(320px, 0.88fr) minmax(0, 1.12fr);
+  grid-template-columns: minmax(360px, 0.96fr) minmax(0, 1.04fr);
   gap: 22px;
   border: 1px solid var(--line);
   border-radius: 8px;
   background: #fff;
   padding: 18px;
   box-shadow: 0 10px 35px rgba(26, 29, 33, 0.04);
-}
-
-.featured-project {
-  grid-template-columns: 1fr;
-  padding: 22px;
-}
-
-.featured-project .project-visual {
-  width: 100%;
-}
-
-.featured-project .project-copy {
-  max-width: 900px;
 }
 
 .project-visual {
